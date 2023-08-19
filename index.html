@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Banka Sistemi</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="loginPage">
+    <h1>Giriş</h1>
+    <input type="text" id="username" placeholder="Kullanıcı Adı"><br><br>
+    <input type="password" id="password" placeholder="Şifre"><br><br>
+    <button onclick="login()">Submit</button>
+  </div>
+
+  <div id="bankingSystem" style="display: none;">
+    <h1>Banka</h1>
+    <p id="balance"></p>
+    <h3>Para Yatır</h3>
+    <input type="number" id="depositAmount" placeholder="Miktar"><br><br>
+    <button onclick="deposit()">Yatır</button><br><br>
+    <h3>Para Çek</h3>
+    <input type="number" id="withdrawAmount" placeholder="Miktar"><br><br>
+    <button onclick="withdraw()">Çek</button><br><br>
+    <button onclick="resetBalance()">Parayı sıfırla</button>
+  </div>
+</body>
+</html>
